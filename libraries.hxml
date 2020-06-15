@@ -1,0 +1,8 @@
+# ---- SDL or DirectX -----------------------
+-lib hlsdl
+# -lib hldx
+
+# ---- For including/excluding libraries ----
+-D TEST_UV
+-D TEST_SSL
+-D TEST_MYSQL

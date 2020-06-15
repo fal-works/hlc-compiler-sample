@@ -1,0 +1,8 @@
+# Common Build arguments
+
+-main Main
+-dce full
+
+-lib heaps
+
+libraries.hxml
