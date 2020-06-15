@@ -8,7 +8,7 @@ class Main extends hxd.App {
   }
 
   function playSound() {
-    hxd.Res.initEmbed();
+    hxd.Res.initLocal();
     hxd.Res.sound.play();
 
     hxd.Window.getInstance().onClose = () -> {
