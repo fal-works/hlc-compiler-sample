@@ -32,7 +32,7 @@ Windows: Run `hlc-compiler-win.bat`
 
 This will compile `Main.hx` and generate an executable (just a black screen with sound effect) in the `bin` directory.
 
-Edit `libraries.hxml` to exclude libraries.
+Edit `libraries.hxml` to exclude some libraries.
 
 
 ## Misc
