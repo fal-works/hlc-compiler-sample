@@ -28,7 +28,7 @@ haxelib install hlc-compiler
 
 ## Usage
 
-Windows: Run `hlc-compiler-win.bat`
+Windows: Run `test-win.bat`
 
 This will compile `Main.hx` and generate an executable (just a black screen with sound effect) in the `bin` directory.
 
