@@ -6,9 +6,9 @@ A small example of HashLink/C native compilation using [hlc-compiler](https://gi
 
 ### Haxe & HashLink
 
-[Haxe](https://haxe.org/) 4.1.1 or compatible
-[HashLink](https://hashlink.haxe.org/) 1.11 or compatible
-[GCC](https://gcc.gnu.org/) 9.3.0 or compatible
+- [Haxe](https://haxe.org/) 4.1.1 or compatible
+- [HashLink](https://hashlink.haxe.org/) 1.11 or compatible
+- [GCC](https://gcc.gnu.org/) 9.3.0 or compatible
 
 ### Libraries
 
@@ -37,4 +37,4 @@ Edit `libraries.hxml` to exclude libraries.
 
 ## Misc
 
-The sample sound (`res/sound.wav`) is from: https://freesound.org/people/TolerableDruid6/sounds/461008/ ([CC0](https://creativecommons.org/publicdomain/zero/1.0/))
+The sample sound (`res/sound.wav`) is from: https://freesound.org/people/TolerableDruid6/sounds/461008/ ( [CC0](https://creativecommons.org/publicdomain/zero/1.0/) )
