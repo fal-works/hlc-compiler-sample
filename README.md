@@ -35,6 +35,8 @@ This will compile `Main.hx` and generate an executable (just a black screen with
 
 Edit `libraries.hxml` to exclude some libraries.
 
+If you are having errors, see also: https://github.com/fal-works/hlc-compiler/wiki
+
 
 ## Misc
 
