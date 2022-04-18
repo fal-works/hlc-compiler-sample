@@ -17,7 +17,7 @@ A small example of HashLink/C native compilation using [hlc-compiler](https://gi
 - [hlsdl](https://lib.haxe.org/p/hlsdl/) or [hldx](https://lib.haxe.org/p/hldx/) 1.10.0 or compatible
 - [hlc-compiler](https://lib.haxe.org/p/hlc-compiler/) 0.2.0 or compatible
 
-```
+```sh
 haxelib install hashlink
 haxelib install heaps
 haxelib install hlsdl
@@ -33,11 +33,12 @@ haxelib install hlc-compiler
 
 This will compile `Main.hx` and generate an executable (just a black screen with sound effect) in the `bin` directory.
 
-Edit `libraries.hxml` to exclude some libraries.
+Edit `libraries.hxml` to switch/exclude any libraries.
 
-If you are having errors, see also: https://github.com/fal-works/hlc-compiler/wiki
+If you are having errors, see also: <https://github.com/fal-works/hlc-compiler/wiki>
 
 
 ## Misc
 
-The sample sound (`res/sound.wav`) is from: https://freesound.org/people/TolerableDruid6/sounds/461008/ ( [CC0](https://creativecommons.org/publicdomain/zero/1.0/) )
+The sample sound (`res/sound.wav`) is from: <https://freesound.org/people/TolerableDruid6/sounds/461008/> ( [CC0](https://creativecommons.org/publicdomain/zero/1.0/) )  
+(EDIT 2022-04-19: Apparently it has been removed)
