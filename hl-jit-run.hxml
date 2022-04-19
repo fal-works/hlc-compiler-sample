@@ -2,7 +2,6 @@
 
 -main Main
 -dce full
--lib heaps
 libraries.hxml
 
 -hl out/main.hl

@@ -1,3 +1,6 @@
+# ---- heaps.io -----------------------------
+-lib heaps
+
 # ---- SDL or DirectX -----------------------
 -lib hlsdl
 # -lib hldx
