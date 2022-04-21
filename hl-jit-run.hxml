@@ -1,8 +1,0 @@
-# Build and Run with HL/JIT
-
--main Main
--dce full
-libraries.hxml
-
--hl out/main.hl
--cmd hl out/main.hl

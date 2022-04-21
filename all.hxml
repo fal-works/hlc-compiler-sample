@@ -1,0 +1,10 @@
+# For code completion
+
+--class-path src
+--class-path scripts
+--main Main
+
+libraries.hxml
+
+--hl _.hl
+--no-output

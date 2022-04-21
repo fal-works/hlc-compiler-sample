@@ -1,8 +1,8 @@
-# Build with HL/C
+# Build with HL/JIT
 
 --class-path src
 --main Main
 --dce full
 libraries.hxml
 
---hl out/c/main.c
+--hl out/main.hl

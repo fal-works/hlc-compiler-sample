@@ -1,11 +1,11 @@
-# ---- heaps.io -----------------------------
--lib heaps
+# ---- Heaps.io -----------------------------------
+--library heaps
 
-# ---- SDL or DirectX -----------------------
--lib hlsdl
-# -lib hldx
+# ---- SDL or DirectX (select either one) ---------
+--library hlsdl
+# --library hldx
 
-# ---- For including/excluding libraries ----
--D TEST_UV
--D TEST_SSL
--D TEST_MYSQL
+# ---- For including/excluding other libraries ----
+--define USE_UV
+--define USE_SSL
+--define USE_MYSQL

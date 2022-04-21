@@ -1,6 +1,10 @@
 class Main extends hxd.App {
-	static function main()
+	static function main() {
+		hxd.Res.initLocal();
 		new Main();
+	}
+
+	final refs:Array<Any> = [];
 
 	override function init() {
 		playSound();
@@ -8,7 +12,6 @@ class Main extends hxd.App {
 	}
 
 	function playSound() {
-		hxd.Res.initLocal();
 		hxd.Res.sound.play();
 
 		hxd.Window.getInstance().onClose = () -> {
@@ -18,16 +21,16 @@ class Main extends hxd.App {
 	}
 
 	function optionals() {
-		#if TEST_UV
-		new hl.uv.Tcp();
+		#if USE_UV
+		refs.push(new hl.uv.Tcp());
 		#end
 
-		#if TEST_SSL
-		new sys.ssl.Socket();
+		#if USE_SSL
+		refs.push(new sys.ssl.Socket());
 		#end
 
-		#if TEST_MYSQL
-		final connectMysql = sys.db.Mysql.connect;
+		#if USE_MYSQL
+		refs.push(sys.db.Mysql.connect);
 		#end
 	}
 }
