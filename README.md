@@ -40,5 +40,4 @@ If you are having errors, see also: <https://github.com/fal-works/hlc-compiler/w
 
 ## Misc
 
-The sample sound (`res/sound.wav`) is from: <https://freesound.org/people/TolerableDruid6/sounds/461008/> ( [CC0](https://creativecommons.org/publicdomain/zero/1.0/) )  
-(EDIT 2022-04-19: Apparently it has been removed)
+The sample sound (`res/sound.wav`) is from: <https://freesound.org/people/mikepro/sounds/438921/> ( [CC0 License](https://creativecommons.org/publicdomain/zero/1.0/) )
