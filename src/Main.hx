@@ -1,3 +1,6 @@
+/**
+	Example app to be compiled.
+**/
 class Main extends hxd.App {
 	static function main() {
 		hxd.Res.initLocal();
