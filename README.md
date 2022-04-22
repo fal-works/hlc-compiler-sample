@@ -92,12 +92,12 @@ You may also add optional arguments as below (simply add them to the commandline
 
 The file below defines a single commandline for invoking `haxelib run hlc-compiler` with some options.
 
-- On Winows: `run-hlc-compiler.bat`
+- On Windows: `run-hlc-compiler.bat`
 - On Mac: `run-hlc-compiler.command`
 
 ### Select libraries to be included
 
-Edit `libraries.hxml` to switch/exclude some libraries.
+Edit `hxml/libraries.hxml` to switch/exclude some libraries.
 
 The `USE_???` defines have actually no effect in this sample project (see `src/Main.hx`), but you can see how they affect the compilation result (i.e. what kind of files will be output into `bin/`) by enabling/disabling them.
 
@@ -107,20 +107,21 @@ To test compiling a minimum CLI app:
 
 - Replace the entire content of `src/Main.hx` with a minimized `main()` function.
     - Such as: `function main() Sys.println("Hello world!");`
-- Comment out all the lines in `libraries.hxml`.
+- Comment out all the lines in `hxml/libraries.hxml`.
 - Remove unnecessary options for hlc-compiler in the `run-hlc-compiler.bat/command` file.
-    - Such as: `--copyRuntimeFiles`, `--runtime`, `-mwindows`
+    - Such as `--runtime` and `-mwindows`
 
 
 ## Misc
 
 ### Errors?
 
-If you're having errors,
+If something goes wrong:
 
-- try `haxe hl-jit.hxml --cmd 'hl out/main.hl'` to test on the HL/JIT target and see if it reproduces.
-- see also: <https://github.com/fal-works/hlc-compiler/wiki>
+- Try `haxe hxml/test-hl-jit.hxml` to test on the HL/JIT target. If it reproduces, perhaps it's not a HL/C issue.
+- Check your Haxe version. Playing sound will not work well with Haxe 4.2.4 or 4.2.5.
+- See also: <https://github.com/fal-works/hlc-compiler/wiki>
 
-### Abount the sample resource
+### About the sample resource
 
 The sample sound (`res/sound.wav`) is from: <https://freesound.org/people/mikepro/sounds/438921/> ( [CC0 License](https://creativecommons.org/publicdomain/zero/1.0/) )
