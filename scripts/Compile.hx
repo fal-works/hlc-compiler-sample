@@ -32,8 +32,8 @@ function processArgs(args:Array<String>) {
 }
 
 function haxeToC() {
-	Sys.println("haxe hl-c.hxml");
-	final code = Sys.command("haxe", ["hl-c.hxml"]);
+	Sys.println("haxe hxml/build-hl-c.hxml");
+	final code = Sys.command("haxe", ["hxml/build-hl-c.hxml"]);
 	if (code != 0)
 		Sys.exit(code);
 }

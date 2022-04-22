@@ -3,6 +3,6 @@
 --class-path src
 --main Main
 --dce full
-libraries.hxml
+hxml/libraries.hxml
 
 --hl out/c/main.c

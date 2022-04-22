@@ -1,0 +1,5 @@
+# Build & Test with HL/JIT
+
+hxml/build-hl-jit.hxml
+
+--cmd hl out/main.hl

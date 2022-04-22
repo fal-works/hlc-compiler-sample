@@ -1,3 +1,6 @@
+# Define libraries to be included.
+# This file is referenced from other hxml files.
+
 # ---- Heaps.io -----------------------------------
 --library heaps
 
