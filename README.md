@@ -8,8 +8,11 @@ A small example of HashLink/C native compilation using [Heaps.io](https://heaps.
 ### Important ones
 
 - [Haxe](https://haxe.org/) 4.2.3 or compatible
+    - Avoid using 4.2.4 or 4.2.5 since there is a [regression bug](https://github.com/HaxeFoundation/haxe/issues/10682).
 - [HashLink](https://hashlink.haxe.org/) 1.11.0 or compatible
-- [GCC](https://gcc.gnu.org/) 11.2.0 or compatible
+- C compiler
+    - Windows: [GCC](https://gcc.gnu.org/) 11.2.0 or compatible
+    - Mac: Clang 13.1.6 or compaptible
 
 ### lix (optional; not required)
 
