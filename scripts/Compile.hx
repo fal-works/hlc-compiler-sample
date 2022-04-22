@@ -39,7 +39,10 @@ function haxeToC() {
 }
 
 function cToBin() {
-	final code = Sys.command("run-hlc-compiler");
+	final code = switch Sys.systemName() {
+		case "Windows": Sys.command("run-hlc-compiler.bat");
+		case _: Sys.command("./run-hlc-compiler.command");
+	}
 	if (code != 0)
 		Sys.exit(code);
 }
@@ -47,7 +50,10 @@ function cToBin() {
 function runBin() {
 	Sys.println("Running: bin/main");
 	Sys.setCwd("bin");
-	final code = Sys.command("main");
+	final code = switch Sys.systemName() {
+		case "Windows": Sys.command("main");
+		case _: Sys.command("./main");
+	}
 	if (code != 0)
 		Sys.exit(code);
 	Sys.setCwd("../");
