@@ -55,7 +55,34 @@ lix download
 
 ## Usage
 
-### Compile/Test: Haxe -> HL/C -> executable
+### Compile Haxe -> HL/c
+
+Run Haxe with:
+
+```sh
+haxe hxml/build-hl-c.hxml
+```
+
+This will:
+
+1. compile the example source code in `src/`, and
+2. generate HL/C code in the `out/c/` directory.
+
+### Compile HL/C -> executable
+
+Run the file below, which defines a single commandline for invoking `haxelib run hlc-compiler` with some options.
+
+- On Windows: `run-hlc-compiler.bat`
+- On Mac: `run-hlc-compiler.command`
+
+This will generate:
+
+- Executable file (with other runtime files) in the `bin/` directory
+- Command file for re-compiling in the `out/` directory
+
+### One-stop compiling & testing
+
+To run the build processes above at once:
 
 ```sh
 haxe -cp scripts --run Compile
@@ -67,23 +94,12 @@ Or, if using [lix](https://github.com/lix-pm/lix.client), just:
 lix Compile
 ```
 
-The above will generate:
-
-- HL/C code in the `out/c/` directory
-- Command file for re-compiling in the `out/` directory
-- Executable file (with other runtime files) in the `bin/` directory
+See `scripts/Compile.hx` for what it does.
 
 You may also add optional arguments as below (simply add them to the commandline above):
 
 - `--clean` or `-c` : Cleanup the output directories (`out/` and `bin/`) before the compilation.
 - `--test` or `-t` : Runs the generated executable once the compilation completes.
-
-### Compile just HL/C -> executable
-
-The file below defines a single commandline for invoking `haxelib run hlc-compiler` with some options.
-
-- On Windows: `run-hlc-compiler.bat`
-- On Mac: `run-hlc-compiler.command`
 
 ### Select libraries to be included
 
