@@ -27,14 +27,13 @@ If you aren't using lix, you can ignore the following files in this repository:
 
 ### Haxe library dependencies
 
-For targeting HashLink:
-
-- [hashlink](https://lib.haxe.org/p/hashlink) 0.1.0 or compatible
-
-For use in the example project:
-
-- [heaps](https://heaps.io/) 1.9.1 or compatible
-- [hlsdl](https://lib.haxe.org/p/hlsdl/) / [hldx](https://lib.haxe.org/p/hldx/) 1.10.0 or compatible
+- For targeting HashLink:
+    - [hashlink](https://lib.haxe.org/p/hashlink) 0.1.0 or compatible
+- For use in the example project:
+    - [heaps](https://heaps.io/) 1.9.1 or compatible
+    - [hlsdl](https://lib.haxe.org/p/hlsdl/) / [hldx](https://lib.haxe.org/p/hldx/) 1.10.0 or compatible
+- For compiling HL/C into executable:
+    - [hlc-compiler](https://lib.haxe.org/p/hlc-compiler/) 0.3.0 or compatible
 
 To install:
 
@@ -44,6 +43,7 @@ haxelib install hashlink
 haxelib install heaps
 haxelib install hlsdl
 haxelib install hldx
+haxelib install hlc-compiler
 ```
 
 Or, if using [lix](https://github.com/lix-pm/lix.client), just:
@@ -51,21 +51,6 @@ Or, if using [lix](https://github.com/lix-pm/lix.client), just:
 ```sh
 lix download
 ```
-
-### hlc-compiler
-
-For compiling HL/C into executable:
-
-- [hlc-compiler](https://lib.haxe.org/p/hlc-compiler/) 0.3.0 or compatible
-
-To install:
-
-```sh
-haxelib newrepo
-haxelib install hlc-compiler
-```
-
-We aren't using [lix](https://github.com/lix-pm/lix.client) here, because the `lix run` command does not work perfectly smoothly so far.
 
 
 ## Usage

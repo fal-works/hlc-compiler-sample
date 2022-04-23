@@ -1,0 +1,7 @@
+# @install: lix --silent download "haxelib:/hlc-compiler#0.3.0" into hlc-compiler/0.3.0/haxelib
+# @run: haxelib run-dir hlc-compiler "${HAXE_LIBCACHE}/hlc-compiler/0.3.0/haxelib"
+-lib greeter
+-lib locator
+-lib sinker
+-cp ${HAXE_LIBCACHE}/hlc-compiler/0.3.0/haxelib/src/
+-D hlc-compiler=0.3.0
