@@ -1,7 +1,13 @@
+import Test.testBin;
 import Cleanup.cleanup;
 
 using Lambda;
 
+/**
+	Options:
+	- `--clean` or `-c`
+	- `--test` or `t`
+**/
 private function main() {
 	final args = processArgs(Sys.args());
 	if (args.clean) {
@@ -18,7 +24,7 @@ private function main() {
 
 	if (args.test) {
 		Sys.println("---- test ------------");
-		runBin();
+		testBin();
 	}
 }
 
@@ -43,17 +49,6 @@ function cToBin() {
 		case "Windows": Sys.command("run-hlc-compiler.bat");
 		case _: Sys.command("./run-hlc-compiler.command");
 	}
-	if (code != 0)
-		Sys.exit(code);
-}
-
-function runBin() {
-	final exePath = switch Sys.systemName() {
-		case "Windows": "bin\\main";
-		case _: "bin/main";
-	}
-	Sys.println('Running: $exePath');
-	final code = Sys.command(exePath);
 	if (code != 0)
 		Sys.exit(code);
 }
