@@ -54,7 +54,7 @@ function runBin() {
 		case "Windows": Sys.command("main");
 		case _: Sys.command("./main");
 	}
+	Sys.setCwd("../");
 	if (code != 0)
 		Sys.exit(code);
-	Sys.setCwd("../");
 }
