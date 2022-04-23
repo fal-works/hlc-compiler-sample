@@ -48,13 +48,12 @@ function cToBin() {
 }
 
 function runBin() {
-	Sys.println("Running: bin/main");
-	Sys.setCwd("bin");
-	final code = switch Sys.systemName() {
-		case "Windows": Sys.command("main");
-		case _: Sys.command("./main");
+	final exePath = switch Sys.systemName() {
+		case "Windows": "bin\\main";
+		case _: "bin/main";
 	}
-	Sys.setCwd("../");
+	Sys.println('Running: $exePath');
+	final code = Sys.command(exePath);
 	if (code != 0)
 		Sys.exit(code);
 }
