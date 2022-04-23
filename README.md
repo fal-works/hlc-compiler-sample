@@ -54,7 +54,11 @@ lix download
 
 ### hlc-compiler
 
-[hlc-compiler](https://lib.haxe.org/p/hlc-compiler/) 0.3.0 or compatible
+For compiling HL/C into executable:
+
+- [hlc-compiler](https://lib.haxe.org/p/hlc-compiler/) 0.3.0 or compatible
+
+To install:
 
 ```sh
 haxelib newrepo
