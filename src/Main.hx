@@ -1,26 +1,57 @@
 /**
-	Example app to be compiled.
+	This is an example application to be compiled with HashLink.
 **/
 class Main extends hxd.App {
+	/** Entry point. **/
 	static function main() {
 		hxd.Res.initLocal();
 		new Main();
 	}
 
+	/** Objects to be drawn. **/
+	final objects:Array<h2d.Object> = [];
+
+	/** Just for holding references. **/
 	final refs:Array<Any> = [];
 
 	override function init() {
+		initApp();
+		initObjects();
 		playSound();
 		optionals();
 	}
 
-	function playSound() {
-		hxd.Res.sound.play();
+	override function update(dt:Float) {
+		updateObjects(dt);
+	}
 
-		hxd.Window.getInstance().onClose = () -> {
+	function initApp() {
+		final window = hxd.Window.getInstance();
+		window.title = "hlc-compiler-sample";
+		window.onClose = () -> {
 			hxd.snd.Manager.get().dispose();
 			return true;
 		};
+		engine.backgroundColor = 0xFFFEFDFF;
+	}
+
+	function initObjects() {
+		final tile = hxd.Res.image.toTile().center();
+		final image = new h2d.Bitmap(tile, s2d);
+		image.setPosition(s2d.width / 2, s2d.height / 2);
+		image.alpha = 0;
+		objects.push(image);
+	}
+
+	function updateObjects(dt:Float) {
+		for (image in objects) {
+			if (image.alpha < 1)
+				image.alpha = Math.min(1, image.alpha + 0.5 * dt); // fade-in effect
+		}
+	}
+
+	function playSound() {
+		hxd.Res.sound.play();
 	}
 
 	function optionals() {
