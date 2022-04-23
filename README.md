@@ -55,7 +55,7 @@ lix download
 
 ## Usage
 
-### Compile Haxe -> HL/c
+### Compile Haxe -> HL/C
 
 Run Haxe with:
 
