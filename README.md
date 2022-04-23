@@ -130,4 +130,5 @@ If something goes wrong:
 
 ### About the sample resource
 
-The sample sound (`res/sound.wav`) is from: <https://freesound.org/people/mikepro/sounds/438921/> ( [CC0 License](https://creativecommons.org/publicdomain/zero/1.0/) )
+- The sample sound (`res/sound.wav`) is from: <https://freesound.org/people/mikepro/sounds/438921/> ( [CC0 License](https://creativecommons.org/publicdomain/zero/1.0/) )
+- The sample image (`res/image.png`) is an original one and it's also [CC0 License](https://creativecommons.org/publicdomain/zero/1.0/).
