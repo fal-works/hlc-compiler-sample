@@ -84,13 +84,14 @@ lix Compile
 
 The above will generate:
 
-- HL/C code in the `out/` directory, and
-- executable file (with other runtime files) in the `bin/` directory.
+- HL/C code in the `out/c/` directory
+- Command file for re-compiling in the `out/` directory
+- Executable file (with other runtime files) in the `bin/` directory
 
 You may also add optional arguments as below (simply add them to the commandline above):
 
-- `--clean` : Cleanup the output directories (`out/` and `bin/`) before the compilation.
-- `--test` : Runs the generated executable once the compilation completes.
+- `--clean` or `-c` : Cleanup the output directories (`out/` and `bin/`) before the compilation.
+- `--test` or `-t` : Runs the generated executable once the compilation completes.
 
 ### Compile just HL/C -> executable
 

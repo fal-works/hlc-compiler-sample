@@ -23,8 +23,8 @@ private function main() {
 }
 
 function processArgs(args:Array<String>) {
-	final clean = args.remove("--clean");
-	final test = args.remove("--test");
+	final clean = args.remove("--clean") || args.remove("-c");
+	final test = args.remove("--test") || args.remove("-t");
 	if (args.length > 0)
 		Sys.println('WARN: Unknown arguments: ${args.join(" ")}');
 
